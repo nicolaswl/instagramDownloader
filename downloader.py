@@ -20,6 +20,15 @@ def main():
     token = auth()
     api = InstagramAPI(access_token=token)
 
+    recent_media, next = api.user_recent_media()
+    photos = []
+    
+    recent = api.
+
+    for media in recent_media:
+        # photos.append(media.images.url)
+        print(media.values)
+
 
 if __name__ == "__main__":
     main()
